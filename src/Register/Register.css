@@ -1,0 +1,115 @@
+.footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 20px;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+.textDiv{
+    text-align: center;
+    padding: 10px 0 2px;
+    color: rgb(59, 59, 63);
+    margin: 5px;
+}
+.error{
+    color: red;
+    font-size: 15px;
+    margin-left: 20px;
+}
+.footer span{
+    padding: 10px;
+    border-radius: 30px;
+    color: blue
+}
+
+.btnn{
+    border: none;
+    outline: none;
+    border: 2px solid rgb(255,255,255,.2);
+    border-radius: 50%;
+    height: 50px;
+    width: 50%;
+    object-fit: cover;
+    align-items: center;
+    margin-left: 20px;
+    cursor: pointer;
+
+    &:hover{
+        color: white;
+        background: rgb(137, 144, 144);
+        animation: animated 2.3s infinite;
+
+
+    }
+
+}
+
+@keyframes animated {
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(8px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .footer{
+        padding: 2px;
+        margin-right: 4px;
+    
+    }
+    .textDiv{
+         font-size: 10px; 
+         margin: 1px;
+   }
+   .footer span{
+    padding: 4px;
+    border-radius: 10px;
+    margin-right: 6px;
+    font-size: 10px;
+    
+}
+
+.btnn{
+    border-radius: 50%;
+    height: 20px;
+    margin-left: 15px;
+
+}
+   
+    
+}
+@media screen and (max-width: 600px) {
+    .footer{
+        padding: 2px;
+        margin-right: 4px;
+    
+    }
+    .textDiv{
+         font-size: 10px; 
+         margin: 1px;
+   }
+   .footer span{
+    padding: 4px;
+    border-radius: 10px;
+    margin-right: 6px;
+    font-size: 10px;
+    
+}
+
+.btnn{
+    border-radius: 50%;
+    height: 20px;
+    margin-left: 15px;
+
+}
+   
+    
+}
